@@ -1,0 +1,26 @@
+
+def calculate_love_score(name1, name2):
+    combined_names = name1 + name2
+
+    true_count = 0
+    love_count = 0
+
+    print("\nyour matched letters with TRUE:")
+
+    for letter in "true":
+        count = combined_names.count(letter)
+        print(f"{letter.upper()} occurs {count} times")
+        true_count += count
+    print(f"Total value of TRUE {true_count}")
+
+    print("\nyour matched letters with LOVE:")
+
+    for letter in "love":
+        count = combined_names.count(letter)
+        print(f"{letter.upper()} occurs {count} times")
+        love_count += count
+    print(f"Total value of LOVE {love_count}")
+
+    love_score = int(str(true_count) + str(love_count))
+    print(f"\nLove Score = {love_score}")
+    return love_score
