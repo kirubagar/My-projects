@@ -1,4 +1,4 @@
-
+Treasure game.py
 #My 1st project
 # Treasure Island
 print(r'''
@@ -65,5 +65,5 @@ else:
 
 # share your thoughts guys
 
-
+rename my sample project.py to Treasure.py
 
